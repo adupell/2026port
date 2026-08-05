@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
-export const StyledDiv = styled.nav`
+export const StyledContainer = styled.nav`
   display: flex;
+  width: 100%;
 
   @media screen and (max-width: 1000px) {
   }
 `;
 
-export const StyledImg = styled.img`
-  display: flex;
-  width: 100%;
+export const StyledTextContainer = styled.div`
+  min-width: 350px;
+  max-width: 500px;
 `;
+
+export const StyledImg = styled.img``;

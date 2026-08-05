@@ -1,7 +1,7 @@
-import { StyledDiv } from "./project.styles";
+import { StyledContainer } from "./project.styles";
 
 const Project = () => {
-  return <StyledDiv>Hello</StyledDiv>;
+  return <StyledContainer>Hello</StyledContainer>;
 };
 
 export default Project;

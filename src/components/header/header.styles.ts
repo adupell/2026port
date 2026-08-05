@@ -9,12 +9,13 @@ interface LinkProps {
 
 export const StyledNav = styled.nav`
   display: flex;
-  height: 100vh;
   position: sticky;
+  top: 0;
+  height: 100vh;
+  max-width: 300px;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  max-width: 300px;
   border-right: dotted ${$orange};
 
   @media screen and (max-width: 1000px) {
@@ -40,10 +41,11 @@ export const StyledLink = styled(Link)<LinkProps>`
 
 export const StyledLogo = styled.img`
   display: flex;
+  width: 50%;
   padding: 64px 0;
 `;
 
 export const StyledGif = styled.img`
   display: flex;
-  width: 100%;
+  width: 80%;
 `;
