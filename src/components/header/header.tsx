@@ -1,13 +1,17 @@
 import { StyledGif, StyledLink, StyledLogo, StyledNav } from "./header.styles";
 import LogoSVG from "../../assets/logo.svg";
+import HandGif from "../../assets/hand.gif";
 import FlowerGif from "../../assets/flower.gif";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+
   return (
     <StyledNav>
       <StyledLogo src={LogoSVG} />
       <StyledLink first to={"/"}>
-        home [work]
+        home[work]
       </StyledLink>
       <StyledLink to={"/about"}>about</StyledLink>
       <StyledLink
@@ -15,8 +19,12 @@ const Header = () => {
         to={"https://www.dropbox.com/s/qht5ne8wdr529lj/RESUME.pdf?dl=0"}
       >
         resume
-      </StyledLink>
-      <StyledGif src={FlowerGif} />
+      </StyledLink>{" "}
+      {location.pathname === "/about" ? (
+        <StyledGif src={HandGif} />
+      ) : (
+        <StyledGif src={FlowerGif} />
+      )}
     </StyledNav>
   );
 };

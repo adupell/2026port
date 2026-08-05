@@ -41,7 +41,7 @@ export const StyledLogo = styled.img`
 
 export const StyledGif = styled.img`
   display: flex;
-  align-items: stretch;
+  width: 100%;
 `;
 
 export const StyledTextItem = styled.div``;
