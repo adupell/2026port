@@ -1,4 +1,9 @@
-import { StyledH1, StyledH2, StyledBody } from "./textComponent.styles";
+import {
+  StyledH1,
+  StyledH2,
+  StyledBody,
+  StyledTitle,
+} from "./textComponent.styles";
 
 interface TextComponentProps {
   text?: string;
@@ -16,7 +21,7 @@ const TextComponent = ({ text, type }: TextComponentProps) => {
       content = <StyledH2>{text}</StyledH2>;
       break;
     case "title":
-      content = <StyledH2>{text}</StyledH2>;
+      content = <StyledTitle>{text}</StyledTitle>;
       break;
     default:
       content = <StyledBody>{text}</StyledBody>;
