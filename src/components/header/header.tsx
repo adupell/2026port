@@ -6,7 +6,9 @@ const Header = () => {
   return (
     <StyledNav>
       <StyledLogo src={LogoSVG} />
-      <StyledLink to={"/"}>home [work]</StyledLink>
+      <StyledLink first to={"/"}>
+        home [work]
+      </StyledLink>
       <StyledLink to={"/about"}>about</StyledLink>
       <StyledLink
         target={"_blank"}

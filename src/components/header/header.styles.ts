@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { $black, $orange } from "../../assets/colors";
 
+interface LinkProps {
+  first?: boolean;
+}
+
 export const StyledNav = styled.nav`
   display: flex;
   position: fixed;
@@ -14,12 +18,13 @@ export const StyledNav = styled.nav`
   }
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)<LinkProps>`
   color: ${$orange};
   text-decoration: none;
   padding: 16px 0;
   width: 100%;
   border-bottom: dotted ${$orange};
+  ${({ first }) => (first ? `border-top: dotted ${$orange};` : "")}
 
   &:hover {
     font-weight: 700;
