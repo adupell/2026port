@@ -7,13 +7,17 @@ import { useLocation } from "react-router-dom";
 const Header = () => {
   const location = useLocation();
 
+  console.log(location);
+
   return (
     <StyledNav>
       <StyledLogo src={LogoSVG} />
-      <StyledLink first to={"/"}>
-        home[work]
+      <StyledLink first active={location.pathname === "/"} to={"/"}>
+        {location.pathname === "/" ? "⋆˚꩜｡ home/work ｡꩜˚⋆" : "home/work"}
       </StyledLink>
-      <StyledLink to={"/about"}>about</StyledLink>
+      <StyledLink active={location.pathname === "/about"} to={"/about"}>
+        {location.pathname === "/about" ? "⋆˚꩜｡ about ｡꩜˚⋆" : "about"}
+      </StyledLink>
       <StyledLink
         target={"_blank"}
         to={"https://www.dropbox.com/s/qht5ne8wdr529lj/RESUME.pdf?dl=0"}

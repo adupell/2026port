@@ -4,10 +4,12 @@ import { $black, $orange } from "../../assets/colors";
 
 interface LinkProps {
   first?: boolean;
+  active?: boolean;
 }
 
 export const StyledNav = styled.nav`
   display: flex;
+  height: 100vh;
   position: fixed;
   flex-direction: column;
   align-items: center;
@@ -25,6 +27,7 @@ export const StyledLink = styled(Link)<LinkProps>`
   width: 100%;
   border-bottom: dotted ${$orange};
   ${({ first }) => (first ? `border-top: dotted ${$orange};` : "")}
+  ${({ active }) => (active ? `font-weight: 700;` : "")}
 
   &:hover {
     font-weight: 700;
