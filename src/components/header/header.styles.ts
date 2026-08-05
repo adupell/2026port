@@ -10,8 +10,9 @@ interface LinkProps {
 export const StyledNav = styled.nav`
   display: flex;
   height: 100vh;
-  position: fixed;
+  position: sticky;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   max-width: 300px;
   border-right: dotted ${$orange};
@@ -46,5 +47,3 @@ export const StyledGif = styled.img`
   display: flex;
   width: 100%;
 `;
-
-export const StyledTextItem = styled.div``;
