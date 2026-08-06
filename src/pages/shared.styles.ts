@@ -4,6 +4,20 @@ export const FooterPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+
+  animation: fadeInAnimation ease-in-out 1.5s;
+  -webkit-animation: fadeInAnimation ease-in-out 1.5s;
+  -moz-animation: fadeInAnimation ease-in-out 1.5s;
+  -o-animation: fadeInAnimation ease-in-out 1.5s;
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const Page = styled.div`
