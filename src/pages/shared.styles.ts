@@ -73,6 +73,7 @@ export const FullImage = styled.img`
   height: auto;
   object-fit: contain;
   margin-bottom: 120px;
+  background-color: #ffffff;
 
   @media screen and (max-width: 1000px) {
     margin: 50px 0;

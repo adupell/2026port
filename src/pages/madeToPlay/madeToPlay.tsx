@@ -14,6 +14,17 @@ import Gigamap from "../../images/madeToPlay/gigamap.png";
 import InitialDesign from "../../images/madeToPlay/spreads.png";
 import Illustrations from "../../images/madeToPlay/illustrations.png";
 import Photography from "../../images/madeToPlay/photography.png";
+import UserTesting from "../../images/madeToPlay/usertesting.png";
+import Observations from "../../images/madeToPlay/observations.png";
+import FinalDesign1 from "../../images/madeToPlay/FinalDesign1.png";
+import FinalDesign2 from "../../images/madeToPlay/FinalDesign2.png";
+import FinalDesign3 from "../../images/madeToPlay/FinalDesign3.png";
+import FinalDesign4 from "../../images/madeToPlay/FinalDesign4.png";
+import FinalDesign5 from "../../images/madeToPlay/FinalDesign5.png";
+import FinalDesign6 from "../../images/madeToPlay/FinalDesign6.png";
+import FinalDesign7 from "../../images/madeToPlay/FinalDesign7.png";
+import FinalDesign8 from "../../images/madeToPlay/FinalDesign8.png";
+import FinalDesign9 from "../../images/madeToPlay/FinalDesign9.png";
 
 const SkillPills = ["user research", "user testing", "branding", "book design"];
 
@@ -131,6 +142,120 @@ const MadeToPlay = () => {
             <TextComponent
               projectPage
               text="For our photography, we went with a white background so it would not be distracting from the toy. It also provided consistency across the variety in toys."
+              type="body"
+            />
+          </TextSection>
+        </Section>
+        <TextComponent projectPage text="03 user testing" type="subheader" />
+        <Section>
+          <TextSection left>
+            <TextComponent projectPage text="script template" type="title" />
+            <TextComponent
+              projectPage
+              text="For our user testing, we created a template with the format for a user testing session."
+              type="body"
+            />
+          </TextSection>
+          <HalfImage src={UserTesting} />
+        </Section>
+        <Section>
+          <HalfImage src={Observations} />
+          <TextSection right>
+            <TextComponent projectPage text="observations" type="title" />
+            <TextComponent
+              projectPage
+              text="While user testing, we were looking for feedback related to the language, illustrations, and process of making each toy to ensure an easy and logical flow. Our user testing sessions were recorded over Zoom with permission."
+              type="body"
+            />
+          </TextSection>
+        </Section>
+        <Section>
+          <TextSection left>
+            <TextComponent projectPage text="feedback & changes" type="title" />
+            <TextComponent
+              projectPage
+              text="While user testing, we were looking for feedback related to the language, illustrations, and process of making each toy to ensure an easy and logical flow. Our user testing sessions were recorded over Zoom with permission."
+              type="body"
+            />
+          </TextSection>
+        </Section>
+        <TextComponent projectPage text="04 final designs" type="subheader" />
+        <Section>
+          <TextSection left>
+            <TextComponent
+              projectPage
+              text="The following pages showcase some of the final spreads for the design of our book."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="We chose to incorporate our larger-pattern pieces across the spreads, as it ties in more clearly. The main components of the to pages and guided play remained the same, with some slight changes to illustrations where needed."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="We also chose to have the guided play immediately follow the toy pages because it made sense when discussing the flow of creating a toy and then finding the activity to use it in."
+              type="body"
+            />
+          </TextSection>
+        </Section>
+        <FullImage src={FinalDesign1} />
+        <FullImage src={FinalDesign2} />
+        <FullImage src={FinalDesign3} />
+        <FullImage src={FinalDesign4} />
+        <FullImage src={FinalDesign5} />
+        <FullImage src={FinalDesign6} />
+        <FullImage src={FinalDesign7} />
+        <FullImage src={FinalDesign8} />
+        <FullImage src={FinalDesign9} />
+        <TextComponent projectPage text="05 impact" type="subheader" />
+        <Section>
+          <TextSection left>
+            <TextComponent
+              projectPage
+              text="city of Boston presentation and distribution"
+              type="title"
+            />
+            <TextComponent
+              projectPage
+              text="At the end of the semester, we presented our final book to the East Boston Social Center and several people from the mayor’s office for childhood education."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="We have continued to work with the city of Boston through the Mayor's office to print and distribute our book citywide to families with young children. You can now find Made To Play in all Boston public libraries, as well as several social centers we worked with. The book is available in over 7 languages!"
+              type="body"
+            />
+          </TextSection>
+          <TextSection>
+            <TextComponent
+              projectPage
+              text="fast company magazine World Changing Idea nominee"
+              type="title"
+            />
+            <TextComponent
+              projectPage
+              text="As of May 2023, our project was honored as a nominee for the World Changing Idea for Education by Fast Company Magazine."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="As stated by the magazine, this sector focuses on “companies, organizations, or initiatives that help inspire better and more equitable learning”."
+              type="body"
+            />
+          </TextSection>
+        </Section>
+        <Section>
+          <TextSection left>
+            <TextComponent projectPage text="takeaways" type="title" />
+            <TextComponent
+              projectPage
+              text="It was amazing to meet and work with the East Boston Social Center, as I feel like our design decisions are driven by a community that directly benefits from the product we made instead of a “personal project”."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="Together, we researched, created a design system, user tested, and published a book. The experience was incredibly rewarding, and I am so proud of the final product!"
               type="body"
             />
           </TextSection>
