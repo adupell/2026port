@@ -17,7 +17,7 @@ const Footer = () => {
       await navigator.clipboard.writeText(text);
       setIsCopied(true);
 
-      setTimeout(() => setIsCopied(false), 3000);
+      setTimeout(() => setIsCopied(false), 4000);
     } catch (err) {
       console.error("Failed to copy text: ", err);
     }
