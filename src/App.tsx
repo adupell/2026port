@@ -1,13 +1,14 @@
 import "./App.css";
-import { Header } from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/home/home";
-import { AboutPage } from "./pages";
+import { Header } from "./components";
+import { HomePage, AboutPage } from "./pages";
+import { ScrollToTop } from "./assets/scrollToTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
