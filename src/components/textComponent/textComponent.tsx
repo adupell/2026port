@@ -6,8 +6,8 @@ import {
 } from "./textComponent.styles";
 
 interface TextComponentProps {
-  text?: string;
-  type?: string;
+  text: string;
+  type: string;
 }
 
 const TextComponent = ({ text, type }: TextComponentProps) => {
