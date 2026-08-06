@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+interface TextSectionProps {
+  left?: boolean;
+  right?: boolean;
+}
+
 export const FooterPageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -38,27 +43,46 @@ export const Page = styled.div`
 export const Section = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 125px 0;
-  padding: 0 50px;
+  margin: 120px 0;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    margin: 0;
+  }
+`;
+
+export const TextSection = styled(Section)<TextSectionProps>`
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  max-width: 500px;
+  margin: 0;
+
+  ${({ left }) => (left ? `margin-right: 80px;` : ``)}
+  ${({ right }) => (right ? `margin-left: 80px;` : ``)}
 
   @media screen and (max-width: 1000px) {
     margin: 50px 0;
-    flex-direction: column;
-    padding: 0;
+    width: 100%;
   }
 `;
 
 export const FullImage = styled.img`
-  mix-blend-mode: darken;
   display: flex;
   width: 100%;
   height: auto;
+  object-fit: contain;
+  margin-bottom: 120px;
+
+  @media screen and (max-width: 1000px) {
+    margin: 50px 0;
+  }
 `;
 
 export const HalfImage = styled.img`
   width: 50%;
   height: auto;
-  mix-blend-mode: darken;
+  object-fit: contain;
 
   @media screen and (max-width: 1000px) {
     width: 100%;

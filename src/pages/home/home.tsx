@@ -13,7 +13,7 @@ const HomePage = () => {
           text="a multi-disciplinary designer with a background in frontend development and magazine and newspaper design"
           type={"header"}
         />
-        <TextComponent text="some of my work:" type={"subheader"} />
+        <TextComponent text="some of my work:" type="subheader" />
         <ProjectContainer>
           <Project
             to="/made-to-play"

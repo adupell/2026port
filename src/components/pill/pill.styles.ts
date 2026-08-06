@@ -10,6 +10,7 @@ export const StyledPill = styled.div<PillProps>`
   margin: 8px;
   padding: 8px 16px;
   border: solid 1px
-    ${({ type }) => (type === "profile" ? `${$orange}` : `${$white}`)};
+    ${({ type }) =>
+      type === "profile" ? `${$orange}` : `${$white}; color: ${$white}`};
   border-radius: 6px;
 `;
