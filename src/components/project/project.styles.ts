@@ -6,6 +6,7 @@ export const StyledContainer = styled.div`
   width: 100%;
   color: ${$white};
   padding: 32px 0;
+  align-items: center;
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
@@ -27,6 +28,6 @@ export const StyledTextContainer = styled.div`
 export const StyledImg = styled.img`
   display: flex;
   object-fit: cover;
-  height: 250px;
-  width: 250px;
+  height: 225px;
+  width: 225px;
 `;

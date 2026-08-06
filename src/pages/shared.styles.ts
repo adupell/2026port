@@ -3,12 +3,16 @@ import styled from "styled-components";
 export const Page = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 120px 160px;
+  padding: 100px 120px;
   flex: 1;
   overflow-y: auto;
 
+  @media screen and (max-width: 1200px) {
+    padding: 80px 100px;
+  }
+
   @media screen and (max-width: 1000px) {
-    padding: 50px;
+    padding: 48px;
   }
 `;
 

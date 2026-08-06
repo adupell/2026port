@@ -12,7 +12,7 @@ export const StyledNav = styled.nav`
   position: sticky;
   top: 0;
   height: 100vh;
-  max-width: 300px;
+  width: 20%;
   flex-direction: column;
   text-align: center;
   align-items: center;
