@@ -1,10 +1,15 @@
 import styled from "styled-components";
-import { $orange } from "../../assets/colors";
+import { $orange, $white } from "../../assets/colors";
 
-export const StyledPill = styled.div`
+interface PillProps {
+  type: string;
+}
+
+export const StyledPill = styled.div<PillProps>`
   width: max-content;
   margin: 8px;
   padding: 8px 16px;
-  border: solid 1px ${$orange};
+  border: solid 1px
+    ${({ type }) => (type === "profile" ? `${$orange}` : `${$white}`)};
   border-radius: 6px;
 `;

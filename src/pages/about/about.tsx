@@ -45,7 +45,7 @@ const AboutPage = () => {
   const renderSkillPills = () => {
     let pills;
     pills = SkillPills.map((text: string) => {
-      return <Pill text={text} />;
+      return <Pill type="profile" text={text} />;
     });
 
     return pills;
@@ -54,7 +54,7 @@ const AboutPage = () => {
   const renderLovePills = () => {
     let pills;
     pills = LovePills.map((text: string) => {
-      return <Pill text={text} />;
+      return <Pill type="profile" text={text} />;
     });
 
     return pills;
@@ -63,7 +63,7 @@ const AboutPage = () => {
   const renderFrankPills = () => {
     let pills;
     pills = FrankPills.map((text: string) => {
-      return <Pill text={text} />;
+      return <Pill type="profile" text={text} />;
     });
 
     return pills;
