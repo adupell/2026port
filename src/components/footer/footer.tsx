@@ -1,3 +1,4 @@
+import { useState } from "react";
 import TextComponent from "../textComponent";
 import {
   StyledA,
@@ -8,7 +9,20 @@ import {
 } from "./footer.styles";
 
 const Footer = () => {
-  const email = () => (window.location.href = "mailto:anddupell@gmail.com");
+  const text = "anddupell@gmail.com";
+  const [isCopied, setIsCopied] = useState<boolean>(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setIsCopied(true);
+
+      setTimeout(() => setIsCopied(false), 3000);
+    } catch (err) {
+      console.error("Failed to copy text: ", err);
+    }
+  };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -22,7 +36,6 @@ const Footer = () => {
       <StyledContainer>
         <StyledTextContainer>
           <TextComponent text="contact" type="title" />
-          <StyledA onClick={email}>email</StyledA>
           <StyledLink
             target="_blank"
             to="https://www.linkedin.com/in/amanda-dupell-profile/"
@@ -32,6 +45,9 @@ const Footer = () => {
           <StyledLink target="_blank" to="https://github.com/adupell">
             github
           </StyledLink>
+          <StyledA onClick={handleCopy}>
+            {isCopied ? "⋆˚꩜｡ copied email! use it to say hello ｡꩜˚⋆" : "email"}
+          </StyledA>
         </StyledTextContainer>
         <StyledTextContainer>
           <TextComponent text="projects" type="title" />
