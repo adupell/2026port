@@ -4,14 +4,18 @@ import { $black, $orange } from "../../assets/colors";
 
 interface LinkProps {
   first?: boolean;
+  active?: boolean;
 }
 
 export const StyledNav = styled.nav`
   display: flex;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 20%;
   flex-direction: column;
+  text-align: center;
   align-items: center;
-  max-width: 300px;
   border-right: dotted ${$orange};
 
   @media screen and (max-width: 1000px) {
@@ -25,6 +29,7 @@ export const StyledLink = styled(Link)<LinkProps>`
   width: 100%;
   border-bottom: dotted ${$orange};
   ${({ first }) => (first ? `border-top: dotted ${$orange};` : "")}
+  ${({ active }) => (active ? `font-weight: 700;` : "")}
 
   &:hover {
     font-weight: 700;
@@ -36,12 +41,11 @@ export const StyledLink = styled(Link)<LinkProps>`
 
 export const StyledLogo = styled.img`
   display: flex;
+  width: 50%;
   padding: 64px 0;
 `;
 
 export const StyledGif = styled.img`
   display: flex;
-  align-items: stretch;
+  width: 80%;
 `;
-
-export const StyledTextItem = styled.div``;
