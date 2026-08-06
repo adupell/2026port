@@ -1,11 +1,12 @@
 import { StyledPill } from "./pill.styles";
 
 interface PillProps {
+  type: string;
   text: string;
 }
 
-const Pill = ({ text }: PillProps) => {
-  return <StyledPill>{text}</StyledPill>;
+const Pill = ({ type, text }: PillProps) => {
+  return <StyledPill type={type}>{text}</StyledPill>;
 };
 
 export default Pill;
