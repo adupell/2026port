@@ -5,3 +5,4 @@ export const $gray = "#B5B5B5";
 export const $madeToPlay = "#62A9D8";
 export const $letterboxd = "#495B69";
 export const $oldPortfolio = "#A06336";
+export const $darkOrange = "#3B2413";

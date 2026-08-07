@@ -46,7 +46,7 @@ const Footer = () => {
             github
           </StyledLink>
           <StyledA onClick={handleCopy}>
-            {isCopied ? "⋆˚꩜｡ copied email! use it to say hello ｡꩜˚⋆" : "email"}
+            {isCopied ? "[ copied email! use it to say hello ]" : "email"}
           </StyledA>
         </StyledTextContainer>
         <StyledTextContainer>

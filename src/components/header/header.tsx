@@ -11,10 +11,10 @@ const Header = () => {
     <StyledNav>
       <StyledLogo src={LogoSVG} />
       <StyledLink first active={location.pathname === "/"} to={"/"}>
-        {location.pathname === "/" ? "⋆˚꩜｡ home/work ｡꩜˚⋆" : "home/work"}
+        {location.pathname === "/" ? "[ home/work ]" : "home/work"}
       </StyledLink>
       <StyledLink active={location.pathname === "/about"} to={"/about"}>
-        {location.pathname === "/about" ? "⋆˚꩜｡ about ｡꩜˚⋆" : "about"}
+        {location.pathname === "/about" ? "[ about ]" : "about"}
       </StyledLink>
       <StyledLink
         target={"_blank"}

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { $orange, $white } from "../../assets/colors";
+import { $darkOrange, $orange, $white } from "../../assets/colors";
 
 interface PillProps {
   type: string;
@@ -13,4 +13,9 @@ export const StyledPill = styled.div<PillProps>`
     ${({ type }) =>
       type === "profile" ? `${$orange}` : `${$white}; color: ${$white}`};
   border-radius: 6px;
+
+  &:hover {
+    background-color: ${$darkOrange};
+    cursor: none;
+  }
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { $black, $orange } from "../../assets/colors";
+import { $black, $darkOrange, $orange } from "../../assets/colors";
 
 interface LinkProps {
   first?: boolean;
@@ -29,7 +29,8 @@ export const StyledLink = styled(Link)<LinkProps>`
   width: 100%;
   border-bottom: dotted ${$orange};
   ${({ first }) => (first ? `border-top: dotted ${$orange};` : "")}
-  ${({ active }) => (active ? `font-weight: 700;` : "")}
+  ${({ active }) =>
+    active ? `font-weight: 700; background-color: ${$darkOrange};` : ""}
 
   &:hover {
     font-weight: 700;
@@ -41,7 +42,7 @@ export const StyledLink = styled(Link)<LinkProps>`
 
 export const StyledLogo = styled.img`
   display: flex;
-  width: 50%;
+  width: 45%;
   padding: 64px 0;
 `;
 
