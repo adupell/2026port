@@ -19,6 +19,17 @@ export const StyledNav = styled.nav`
   border-right: dotted ${$orange};
 
   @media screen and (max-width: 1000px) {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border-right: 0;
+    border-bottom: dotted ${$orange};
+    z-index: 999;
   }
 `;
 
@@ -38,15 +49,28 @@ export const StyledLink = styled(Link)<LinkProps>`
     background-color: ${$orange};
     cursor: pointer;
   }
+
+  @media screen and (max-width: 1000px) {
+    background-color: ${$black};
+    border: none;
+  }
 `;
 
 export const StyledLogo = styled.img`
   display: flex;
   width: 45%;
   padding: 64px 0;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const StyledGif = styled.img`
   display: flex;
   width: 80%;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
