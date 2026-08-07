@@ -1,8 +1,14 @@
 import styled from "styled-components";
+import { $white } from "../assets/colors";
 
 interface TextSectionProps {
   left?: boolean;
   right?: boolean;
+  long?: boolean;
+}
+
+interface ImageProps {
+  background?: boolean;
 }
 
 export const FooterPageContainer = styled.div`
@@ -52,37 +58,41 @@ export const Section = styled.div`
 `;
 
 export const TextSection = styled(Section)<TextSectionProps>`
+  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 50%;
   max-width: 500px;
   margin: 0;
+  flex: 1;
 
-  ${({ left }) => (left ? `margin-right: 80px;` : ``)}
-  ${({ right }) => (right ? `margin-left: 80px;` : ``)}
+  ${({ left }) => (left ? `padding-right: 80px;` : ``)}
+  ${({ right }) => (right ? `padding-left: 80px;` : ``)}
+  ${({ long }) =>
+    long ? `justify-content: space-between;` : `justify-content: flex-start;`}
 
   @media screen and (max-width: 1000px) {
-    margin: 20px 0;
+    padding: 20px 0;
     width: 100%;
   }
 `;
 
-export const FullImage = styled.img`
+export const FullImage = styled.img<ImageProps>`
   display: flex;
   width: 100%;
   height: auto;
+  object-fit: contain;
   margin-bottom: 120px;
-  background-color: #ffffff;
+  ${({ background }) => (background ? `background-color: ${$white};` : ``)}
 
   @media screen and (max-width: 1000px) {
     margin: 20px 0;
   }
 `;
 
-export const HalfImage = styled.img`
+export const HalfImage = styled.img<ImageProps>`
   width: 50%;
   height: auto;
   object-fit: contain;
+  ${({ background }) => (background ? `background-color:${$white};` : ``)}
 
   @media screen and (max-width: 1000px) {
     width: 100%;

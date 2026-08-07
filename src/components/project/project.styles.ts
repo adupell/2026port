@@ -11,7 +11,7 @@ export const StyledContainer = styled.div`
   @media screen and (max-width: 1000px) {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
+    padding: 48px 0;
   }
 
   transition: transform 0.2s ease-in-out;
