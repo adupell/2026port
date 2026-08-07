@@ -45,7 +45,7 @@ export const Page = styled.div`
   }
 `;
 
-export const Section = styled.div<SectionProps>`
+export const Section = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 120px 0;
