@@ -4,6 +4,7 @@ import { $white } from "../assets/colors";
 interface TextSectionProps {
   left?: boolean;
   right?: boolean;
+  long?: boolean;
 }
 
 interface ImageProps {
@@ -59,13 +60,14 @@ export const Section = styled.div`
 export const TextSection = styled(Section)<TextSectionProps>`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   max-width: 500px;
   margin: 0;
   flex: 1;
 
   ${({ left }) => (left ? `padding-right: 80px;` : ``)}
   ${({ right }) => (right ? `padding-left: 80px;` : ``)}
+  ${({ long }) =>
+    long ? `justify-content: space-between;` : `justify-content: flex-start;`}
 
   @media screen and (max-width: 1000px) {
     padding: 20px 0;
