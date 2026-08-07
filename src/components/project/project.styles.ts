@@ -10,6 +10,8 @@ export const StyledContainer = styled.div`
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
   }
 
   transition: transform 0.2s ease-in-out;
@@ -23,6 +25,10 @@ export const StyledTextContainer = styled.div`
   margin-left: 32px;
   flex-direction: column;
   max-width: 500px;
+
+  @media screen and (max-width: 1000px) {
+    margin: 0;
+  }
 `;
 
 export const StyledImg = styled.img`
