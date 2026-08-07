@@ -43,7 +43,7 @@ export const StyledImg = styled.img`
 
   @media screen and (max-width: 1000px) {
     position: relative;
-    top: 0;
     flex-direction: column;
+    top: 0;
   }
 `;
