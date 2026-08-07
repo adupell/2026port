@@ -71,7 +71,6 @@ export const FullImage = styled.img`
   display: flex;
   width: 100%;
   height: auto;
-  object-fit: contain;
   margin-bottom: 120px;
   background-color: #ffffff;
 
