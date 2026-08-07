@@ -30,6 +30,7 @@ export const StyledNav = styled.nav`
     border-right: 0;
     border-bottom: dotted ${$orange};
     z-index: 999;
+    background-color: ${$black};
   }
 `;
 
@@ -51,7 +52,6 @@ export const StyledLink = styled(Link)<LinkProps>`
   }
 
   @media screen and (max-width: 1000px) {
-    background-color: ${$black};
     border: none;
   }
 `;
