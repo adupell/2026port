@@ -19,9 +19,6 @@ export const StyledNav = styled.nav`
   border-right: dotted ${$orange};
 
   @media screen and (max-width: 1000px) {
-    display: flex;
-    position: sticky;
-    top: 0;
     width: 100%;
     height: auto;
     flex-direction: row;

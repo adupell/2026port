@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import { $white } from "../assets/colors";
 
 interface TextSectionProps {
   left?: boolean;
   right?: boolean;
+}
+
+interface ImageProps {
+  background?: boolean;
 }
 
 export const FooterPageContainer = styled.div`
@@ -40,7 +45,7 @@ export const Page = styled.div`
   }
 `;
 
-export const Section = styled.div`
+export const Section = styled.div<SectionProps>`
   display: flex;
   justify-content: space-between;
   margin: 120px 0;
@@ -52,6 +57,7 @@ export const Section = styled.div`
 `;
 
 export const TextSection = styled(Section)<TextSectionProps>`
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 50%;
@@ -67,22 +73,24 @@ export const TextSection = styled(Section)<TextSectionProps>`
   }
 `;
 
-export const FullImage = styled.img`
+export const FullImage = styled.img<ImageProps>`
   display: flex;
   width: 100%;
   height: auto;
+  object-fit: contain;
   margin-bottom: 120px;
-  background-color: #ffffff;
+  ${({ background }) => (background ? `background-color: ${$white};` : ``)}
 
   @media screen and (max-width: 1000px) {
     margin: 20px 0;
   }
 `;
 
-export const HalfImage = styled.img`
+export const HalfImage = styled.img<ImageProps>`
   width: 50%;
   height: auto;
   object-fit: contain;
+  ${({ background }) => (background ? `background-color:${$white};` : ``)}
 
   @media screen and (max-width: 1000px) {
     width: 100%;

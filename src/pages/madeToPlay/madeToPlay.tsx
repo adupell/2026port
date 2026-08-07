@@ -199,15 +199,15 @@ const MadeToPlay = () => {
             />
           </TextSection>
         </Section>
-        <FullImage src={FinalDesign1} />
-        <FullImage src={FinalDesign2} />
-        <FullImage src={FinalDesign3} />
-        <FullImage src={FinalDesign4} />
-        <FullImage src={FinalDesign5} />
-        <FullImage src={FinalDesign6} />
-        <FullImage src={FinalDesign7} />
-        <FullImage src={FinalDesign8} />
-        <FullImage src={FinalDesign9} />
+        <FullImage background src={FinalDesign1} />
+        <FullImage background src={FinalDesign2} />
+        <FullImage background src={FinalDesign3} />
+        <FullImage background src={FinalDesign4} />
+        <FullImage background src={FinalDesign5} />
+        <FullImage background src={FinalDesign6} />
+        <FullImage background src={FinalDesign7} />
+        <FullImage background src={FinalDesign8} />
+        <FullImage background src={FinalDesign9} />
         <TextComponent projectPage text="05 impact" type="subheader" />
         <Section>
           <TextSection left>
