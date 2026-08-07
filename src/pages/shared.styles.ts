@@ -62,7 +62,7 @@ export const TextSection = styled(Section)<TextSectionProps>`
   ${({ right }) => (right ? `margin-left: 80px;` : ``)}
 
   @media screen and (max-width: 1000px) {
-    margin: 50px 0;
+    margin: 20px 0;
     width: 100%;
   }
 `;
@@ -75,7 +75,7 @@ export const FullImage = styled.img`
   background-color: #ffffff;
 
   @media screen and (max-width: 1000px) {
-    margin: 50px 0;
+    margin: 20px 0;
   }
 `;
 
