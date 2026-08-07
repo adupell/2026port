@@ -8,23 +8,24 @@ import {
 interface TextComponentProps {
   text: string;
   type: string;
+  projectPage?: boolean;
 }
 
-const TextComponent = ({ text, type }: TextComponentProps) => {
+const TextComponent = ({ text, type, projectPage }: TextComponentProps) => {
   let content = <></>;
 
   switch (type) {
     case "header":
-      content = <StyledH1>{text}</StyledH1>;
+      content = <StyledH1 projectPage={projectPage}>{text}</StyledH1>;
       break;
     case "subheader":
-      content = <StyledH2>{text}</StyledH2>;
+      content = <StyledH2 projectPage={projectPage}>{text}</StyledH2>;
       break;
     case "title":
-      content = <StyledTitle>{text}</StyledTitle>;
+      content = <StyledTitle projectPage={projectPage}>{text}</StyledTitle>;
       break;
     default:
-      content = <StyledBody>{text}</StyledBody>;
+      content = <StyledBody projectPage={projectPage}>{text}</StyledBody>;
       break;
   }
 
