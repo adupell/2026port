@@ -60,15 +60,15 @@ export const TextSection = styled(Section)<TextSectionProps>`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 50%;
   max-width: 500px;
   margin: 0;
+  flex: 1;
 
-  ${({ left }) => (left ? `margin-right: 80px;` : ``)}
-  ${({ right }) => (right ? `margin-left: 80px;` : ``)}
+  ${({ left }) => (left ? `padding-right: 80px;` : ``)}
+  ${({ right }) => (right ? `padding-left: 80px;` : ``)}
 
   @media screen and (max-width: 1000px) {
-    margin: 20px 0;
+    padding: 20px 0;
     width: 100%;
   }
 `;
