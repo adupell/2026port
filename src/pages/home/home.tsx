@@ -3,6 +3,7 @@ import { FooterPageContainer, Page } from "../shared.styles";
 import PersonalPortfolio from "../../images/home/personalportfolio.png";
 import MadeToPlay from "../../images/home/madetoplay.png";
 import Letterboxd from "../../images/home/letterboxd.png";
+import Reinsurance from "../../images/home/reinsurance.png";
 import { ProjectContainer } from "./home.styles";
 
 const HomePage = () => {
@@ -10,11 +11,18 @@ const HomePage = () => {
     <FooterPageContainer>
       <Page>
         <TextComponent
-          text="a multi-disciplinary designer with a background in frontend development and magazine and newspaper design"
+          text="a multi-disciplinary designer with a background in frontend development and magazine/newspaper design"
           type={"header"}
         />
-        <TextComponent text="some of my work:" type="subheader" />
+        <TextComponent text="some of my clients & work:" type="subheader" />
         <ProjectContainer>
+          <Project
+            to="/reinsurance"
+            img={Reinsurance}
+            title="insurance tools and dashboards"
+            description="For 2 years, I worked with an insurance business to create new internal tools and dashboards for numberous users. Several of the products involved simplifying complex workflows and solving data problems to help users make clearer decisions. Working on numerous products, I also founded and designed the company's UI design system and component library."
+            skills="ux/ui design | data visualizations | design systems"
+          />
           <Project
             to="/made-to-play"
             img={MadeToPlay}
