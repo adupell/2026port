@@ -4,8 +4,6 @@ import {
   Page,
   Section,
   TextSection,
-  HalfImage,
-  FullImage,
 } from "../shared.styles";
 import {
   MultiImageContainer,
