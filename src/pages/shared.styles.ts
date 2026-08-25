@@ -50,6 +50,7 @@ export const Section = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 120px 0;
+  width: 100%;
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
@@ -98,4 +99,10 @@ export const HalfImage = styled.img<ImageProps>`
     width: 100%;
     margin-bottom: 20px;
   }
+`;
+
+export const StyledVideo = styled.video`
+  display: flex;
+  width: 50%;
+  height: auto;
 `;

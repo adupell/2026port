@@ -3,6 +3,7 @@ import {
   FooterPageContainer,
   Page,
   Section,
+  StyledVideo,
   TextSection,
 } from "../shared.styles";
 import {
@@ -15,6 +16,11 @@ import UserJourney2 from "../../images/resinsurance/pw/userjourney-2-analytics.p
 import UserJourney3 from "../../images/resinsurance/pw/userjourney-3-submission.png";
 import UserJourney4 from "../../images/resinsurance/pw/userjourney-4-quote.png";
 import UserJourney5 from "../../images/resinsurance/pw/userjourney-5-policy.png";
+import UserFlow1 from "../../images/resinsurance/pw/userflow-1.png";
+import UserFlow2 from "../../images/resinsurance/pw/userflow-2.png";
+import UserFlow3 from "../../images/resinsurance/pw/userflow-3.png";
+import WireframeVideo from "../../images/resinsurance/pw/wireframes.mp4";
+import WireframeProtoVideo from "../../images/resinsurance/pw/wireframes-proto.mp4";
 
 const DesignSkillPills = [
   "accessibility",
@@ -125,6 +131,31 @@ const Reinsurance = () => {
             <StyledMultiImage src={UserJourney4} />
             <StyledMultiImage src={UserJourney5} />
           </MultiImageContainer>
+        </Section>
+        <Section>
+          <MultiImageContainer>
+            <StyledMultiImage src={UserFlow1} />
+            <StyledMultiImage src={UserFlow2} />
+            <StyledMultiImage src={UserFlow3} />
+          </MultiImageContainer>
+          <TextSection right>
+            <TextComponent projectPage text="user flows" type="title" />
+            <TextComponent
+              projectPage
+              text="In tangent with the user journey maps"
+              type="body"
+            />
+          </TextSection>
+        </Section>
+        <Section>
+          <StyledVideo loop autoPlay muted>
+            <source src={WireframeVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </StyledVideo>
+          <StyledVideo loop autoPlay muted>
+            <source src={WireframeProtoVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </StyledVideo>
         </Section>
       </Page>
       <Footer />
