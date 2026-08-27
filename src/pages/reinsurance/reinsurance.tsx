@@ -142,7 +142,7 @@ const Reinsurance = () => {
             <TextComponent projectPage text="user flows" type="title" />
             <TextComponent
               projectPage
-              text="In tangent with the user journey maps"
+              text="In tangent with the user journey maps, we also created flow diagrams to outline the different decisions and paths a user might take on the application."
               type="body"
             />
           </TextSection>
@@ -156,6 +156,25 @@ const Reinsurance = () => {
             <source src={WireframeProtoVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </StyledVideo>
+        </Section>
+        <Section>
+          <TextSection>
+            <TextComponent
+              projectPage
+              text="wire frames & prototyping"
+              type="title"
+            />
+            <TextComponent
+              projectPage
+              text="After gathering requirements, completing user interviews, and finishing the user jounerys and flows, we moved on to designing wireframes for a full MVP."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="We then created prototypes for the various user flows throughout the application. Using Figma, we could test each of these flow scenarios with real users."
+              type="body"
+            />
+          </TextSection>
         </Section>
       </Page>
       <Footer />

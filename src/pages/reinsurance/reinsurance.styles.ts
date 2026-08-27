@@ -11,6 +11,10 @@ export const MultiImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
 `;
 
 export const StyledMultiImage = styled.img`
