@@ -309,7 +309,7 @@ const Letterboxd = () => {
               />
             </div>
             <div>
-              <TextComponent projectPage text="new from friends" type="title" />
+              <TextComponent projectPage text="movie lists" type="title" />
               <TextComponent
                 projectPage
                 text="When researching user feedback, many users reported “movie lists” as one of the application’s hidden features."
