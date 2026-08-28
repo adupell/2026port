@@ -256,23 +256,37 @@ const GravelBurn = () => {
             />
           </TextSection>
           <TextSection>
-            <TextComponent projectPage text="testimonial" type="title" />
+            <TextComponent projectPage text="testimonials" type="title" />
             <TextComponent
               projectPage
-              text='"I can already say they’re setting the bar higher than I’ve ever experienced in a race besides the dang Tour de France in terms of production value.'
+              text="Payson McElveen and Haley Smith, professional cyclists, gave the app experience praise during a stage recap on an Apple podcast, With Pace."
               type="body"
             />
             <TextComponent
               projectPage
-              text='One example: This is their app. Route insights, host town fun facts, logistical questions, photos, results, and more."'
+              text='"You&apos;re literally reading the results directly off of the Gravel Burn app."'
               type="body"
             />
-            <TextComponent projectPage text="- Gravel Racer" type="body" />
+            <TextComponent
+              projectPage
+              text='"I know, the app is insane..."'
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="&quot;It's like when you go to a nice museum and the museum has an app and there's different versions of the interpretive experience you can have. There's the routes, and the wildlife on the routes, and the key segments. There's infographics, it's crazy!&quot;"
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="&quot;I've been using it to study the stage for the upcoming day... It's just really good.&quot;"
+              type="body"
+            />
             <StyledLink
               target="_blank"
-              href="https://www.instagram.com/reel/DQPg-PGDV5S/?igsh=MWtnYTRwdWduODI2bw%3D%3D"
+              href="https://podcasts.apple.com/ch/podcast/gravel-burn-stage-2-recap-with-haley-smith/id1459162520?i=1000733778978&l=en-GB"
             >
-              Social Media Post
+              Listen to the episode here, with the testmonial at the 11:31 mark
             </StyledLink>
           </TextSection>
         </Section>
