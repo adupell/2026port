@@ -46,11 +46,12 @@ const Footer = () => {
             github
           </StyledLink>
           <StyledA onClick={handleCopy}>
-            {isCopied ? "[ copied email! use it to say hello ]" : "email"}
+            {isCopied ? "[copied! use it to say hello]" : "email"}
           </StyledA>
         </StyledTextContainer>
         <StyledTextContainer>
           <TextComponent text="projects" type="title" />
+          <StyledLink to="/gravel-burn">gravel burn</StyledLink>
           <StyledLink to="/made-to-play">made to play</StyledLink>
           <StyledLink to="/letterboxd">letterboxd</StyledLink>
           <StyledLink to="https://amandadupell.surge.sh/" target="_blank">
