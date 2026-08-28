@@ -268,7 +268,10 @@ const GravelBurn = () => {
               type="body"
             />
             <TextComponent projectPage text="- Gravel Racer" type="body" />
-            <StyledLink href="https://www.instagram.com/reel/DQPg-PGDV5S/?igsh=MWtnYTRwdWduODI2bw%3D%3D">
+            <StyledLink
+              target="_blank"
+              href="https://www.instagram.com/reel/DQPg-PGDV5S/?igsh=MWtnYTRwdWduODI2bw%3D%3D"
+            >
               Social Media Post
             </StyledLink>
           </TextSection>
