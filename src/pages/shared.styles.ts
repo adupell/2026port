@@ -100,3 +100,9 @@ export const HalfImage = styled.img<ImageProps>`
     margin-bottom: 20px;
   }
 `;
+
+export const StyledVideo = styled.video`
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+`;

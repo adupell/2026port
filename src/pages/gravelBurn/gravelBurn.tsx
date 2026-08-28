@@ -5,9 +5,10 @@ import {
   HalfImage,
   Page,
   Section,
+  StyledVideo,
   TextSection,
 } from "../shared.styles";
-import { PillContainer } from "./gravelBurn.styles";
+import { PillContainer, StyledLink } from "./gravelBurn.styles";
 import Cover from "../../images/gravelBurn/appstore.png";
 import ColorGuide from "../../images/gravelBurn/color-guide.png";
 import Inspo from "../../images/gravelBurn/inspo.png";
@@ -15,6 +16,7 @@ import Concept1 from "../../images/gravelBurn/night-burn.png";
 import Concept2 from "../../images/gravelBurn/safari.png";
 import Wireframe from "../../images/gravelBurn/wireframe-2.png";
 import Hifi from "../../images/gravelBurn/hifi.png";
+import HifiVideo from "../../images/gravelBurn/app-demo.mp4";
 
 const SkillPills = [
   "brand identity",
@@ -40,7 +42,7 @@ const GravelBurn = () => {
       <Page>
         <TextComponent
           projectPage
-          text="gravel cycling | elixirr | 4 months"
+          text="gravel cycling | elixirr | 2 months"
           type="body"
         />
         <TextComponent
@@ -205,8 +207,71 @@ const GravelBurn = () => {
               text="We collaborated closely with developers, ensuring the app’s performance aligned with design intent. Offline functionality, leaderboard updates, and CMS-driven content were rigorously tested, even under simulated low-signal conditions."
               type="body"
             />
+            <TextComponent
+              projectPage
+              text="The following video shows the prototype we created for them. The prototype includes copy and placeholder text because our client relied on a custom-built CMS to enter content when written. Because the project too "
+              type="body"
+            />
           </TextSection>
           <HalfImage src={Hifi} />
+        </Section>
+        <Section>
+          <TextSection left>
+            <TextComponent projectPage text="prototype" type="title" />
+            <TextComponent
+              projectPage
+              text="The following video shows the prototype we created for them. The prototype includes placeholder text because our client relied on a custom-built CMS to enter content when written."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="Because the project turnaround was 2 months, we created the framework for the application with mock copy so we didn't need to wait on any internal team members."
+              type="body"
+            />
+          </TextSection>
+        </Section>
+        <Section>
+          <StyledVideo autoPlay controls loop muted>
+            <source src={HifiVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </StyledVideo>
+        </Section>
+        <TextComponent
+          projectPage
+          text="05 impact & response"
+          type="subheader"
+        />
+        <Section>
+          <TextSection left>
+            <TextComponent projectPage text="launch" type="title" />
+            <TextComponent
+              projectPage
+              text="Our mobile application launched after 2 months of design and 2 months of development, landing in the hands of the racers just in time for the 7 day event."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="As our client continues to host cycling events, we hope to QA and further improve upon the launched application."
+              type="body"
+            />
+          </TextSection>
+          <TextSection>
+            <TextComponent projectPage text="testimonial" type="title" />
+            <TextComponent
+              projectPage
+              text="''I can already say they’re setting the bar higher than I’ve ever experienced in a race besides the dang Tour de France in terms of production value."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="One example: This is their app. Route insights, host town fun facts, logistical questions, photos, results, and more.''"
+              type="body"
+            />
+            <TextComponent projectPage text="- Gravel Racer" type="body" />
+            <StyledLink href="https://www.instagram.com/reel/DQPg-PGDV5S/?igsh=MWtnYTRwdWduODI2bw%3D%3D">
+              Social Media Post
+            </StyledLink>
+          </TextSection>
         </Section>
       </Page>
       <Footer />
