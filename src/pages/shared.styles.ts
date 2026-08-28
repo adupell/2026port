@@ -50,6 +50,7 @@ export const Section = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 120px 0;
+  align-items: top;
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;

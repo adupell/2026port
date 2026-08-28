@@ -1,11 +1,20 @@
 import { Footer, Pill, TextComponent } from "../../components";
 import {
   FooterPageContainer,
+  FullImage,
+  HalfImage,
   Page,
   Section,
   TextSection,
 } from "../shared.styles";
 import { PillContainer } from "./gravelBurn.styles";
+import Cover from "../../images/gravelBurn/appstore.png";
+import ColorGuide from "../../images/gravelBurn/color-guide.png";
+import Inspo from "../../images/gravelBurn/inspo.png";
+import Concept1 from "../../images/gravelBurn/night-burn.png";
+import Concept2 from "../../images/gravelBurn/safari.png";
+import Wireframe from "../../images/gravelBurn/wireframe-2.png";
+import Hifi from "../../images/gravelBurn/hifi.png";
 
 const SkillPills = [
   "brand identity",
@@ -14,7 +23,6 @@ const SkillPills = [
   "wireframing",
   "prototyping",
   "mobile application design",
-  "website design",
 ];
 
 const GravelBurn = () => {
@@ -37,7 +45,7 @@ const GravelBurn = () => {
         />
         <TextComponent
           projectPage
-          text="a gravel cycling race companion mobile application with live data"
+          text="a race companion mobile application with live data"
           type="header"
         />
         <TextComponent projectPage text="skills" type="title" />
@@ -47,12 +55,12 @@ const GravelBurn = () => {
             <TextComponent projectPage text="overview" type="title" />
             <TextComponent
               projectPage
-              text="Letterboxd is a social media platform and network for film lovers. It allows you to track, rate, and review movies you’ve seen and add others to a watchlist for future viewing."
+              text="When the organisers approached us, they asked for a complete digital race companion. One that could guide 500 riders of varying skill levels through one of the most remote landscapes on Earth, where several days went without a single bar of signal."
               type="body"
             />
             <TextComponent
               projectPage
-              text="The application has garnered a large following and is one of the leading “movie review” mobile applications."
+              text="From the rugged terrain of the Karoo to the communal campsites at sunset, this was a race designed for connection - with the land, fellow riders, and the journey itself. With stages that stretch across unpaved desert, mountain passes, and historic Karoo towns, the event attracts both pro-am racers and adventure cyclists from across the world, from ages 18 to 74."
               type="body"
             />
           </TextSection>
@@ -60,15 +68,145 @@ const GravelBurn = () => {
             <TextComponent projectPage text="goals" type="title" />
             <TextComponent
               projectPage
-              text="It can be overwhelming and complicated for users to discover films, movie lists, and other users to follow on the application."
+              text="The team needed to solve a very human problem: How do we keep riders informed, safe, and inspired in moments of total digital isolation? Each day, participants faced new routes, new terrains, and new logistics, while fatigue and dehydration dulled their focus."
               type="body"
             />
             <TextComponent
               projectPage
-              text="My goal with this project was to redesign specific workflows and screens to ease usability and expose more features on the platform."
+              text="Our client had written a traditional rider manual. However, this was dense and impractical mid-race. Riders needed a single, pocket-sized command centre that worked offline and adapted dynamically to their journey."
               type="body"
             />
           </TextSection>
+        </Section>
+        <FullImage src={Cover} />
+        <TextComponent
+          projectPage
+          text="01 research & workshops"
+          type="subheader"
+        />
+        <Section>
+          <TextSection left>
+            <TextComponent projectPage text="discovery" type="title" />
+            <TextComponent
+              projectPage
+              text="We immersed ourselves in the race’s culture. We began with deep discovery workshops involving race organisers and technical teams. We developed rider proto-personas, which informed the foundations of our design thinking. Through stakeholder interviews and scenario mapping, we traced a rider’s day: from pre-dawn prep in a tent, through each climb and checkpoint, to recovery under Karoo starlight."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="We analysed existing cycling tools (Ride With GPS, Strava, Trailforks) to understand how they visualised terrain data and stage progress. Then, we tailored those insights to Gravel Burn’s luxury-adventure hybrid identity."
+              type="body"
+            />
+          </TextSection>
+          <TextSection>
+            <TextComponent
+              projectPage
+              text="information architecture & ux strategy"
+              type="title"
+            />
+            <TextComponent
+              projectPage
+              text="We converted the existing rider manual into an interactive architecture designed for clarity and flow. Content was reorganised around rider context, covering what they needed before a stage, during a stage, and after a stage."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="Offline data caching and CMS synchronisation allowed dynamic updates even without signal. The system automatically refreshed content when riders passed through connected checkpoints."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="We created a live event view. This automatically updated itineraries and ticking off completed stages. This transformed the app into a living progress tracker, both functional and motivational."
+              type="body"
+            />
+          </TextSection>
+        </Section>
+        <TextComponent projectPage text="02 wireframes" type="subheader" />
+        <Section>
+          <TextSection left>
+            <TextComponent
+              projectPage
+              text="Wireframes mapped every user journey, from checking morning schedules to viewing race stages, tracking results, and accessing logistical info. We also established a component library, the foundation for scalability and consistency across screens."
+              type="body"
+            />
+          </TextSection>
+          <HalfImage src={Wireframe} />
+        </Section>
+        <TextComponent
+          projectPage
+          text="03 visual design & brand expression"
+          type="subheader"
+        />
+        <Section>
+          <TextSection left>
+            <TextComponent projectPage text="branding" type="title" />
+            <TextComponent
+              projectPage
+              text="A dark mode palette became essential: we predicted that riders would be accessing their app mostly at night from their tents, as they learned what to expect from the next day’s stage."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="We took inspiration from apps with bold and neutral colors, large font, data visualisations, and photography."
+              type="body"
+            />
+          </TextSection>
+          <HalfImage src={Inspo} />
+        </Section>
+        <FullImage src={ColorGuide} />
+        <Section>
+          <TextSection left>
+            <TextComponent
+              projectPage
+              text="concept exploration"
+              type="title"
+            />
+            <TextComponent
+              projectPage
+              text="We presented the client with two concepts for the application:"
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="Concept One: A sleek, data-driven experience with high contrast, dark themes, bold orange accents, and performance analytics at the forefront."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="Concept Two: A nature-inspired experience, merging orange and green with earthy neutrals and immersive imagery of the South African landscape."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="The team gravitated to Concept Two, captivated by how it celebrated the soul of the race without sacrificing its technical edge. We leaned into the duality of grit and grace: sharp angles and soft curves echo the undulating gravel paths and harsh terrain."
+              type="body"
+            />
+          </TextSection>
+        </Section>
+        <Section>
+          <HalfImage src={Concept1} />
+          <HalfImage src={Concept2} />
+        </Section>
+        <TextComponent
+          projectPage
+          text="04 high-fidelity design"
+          type="subheader"
+        />
+        <Section>
+          <TextSection left>
+            <TextComponent projectPage text="brand application" type="title" />
+            <TextComponent
+              projectPage
+              text="With the direction chosen, we evolved the wireframes into high-fidelity prototypes. Every pixel echoed the brand’s core values — strength, endurance, and connection to the environment. The UI was clean, tactile, and energizing."
+              type="body"
+            />
+            <TextComponent
+              projectPage
+              text="We collaborated closely with developers, ensuring the app’s performance aligned with design intent. Offline functionality, leaderboard updates, and CMS-driven content were rigorously tested, even under simulated low-signal conditions."
+              type="body"
+            />
+          </TextSection>
+          <HalfImage src={Hifi} />
         </Section>
       </Page>
       <Footer />
