@@ -21,7 +21,7 @@ const HomePage = () => {
             img={GravelBurn}
             title="professional cycling event companion app & website"
             description="Our client needed an offline mobile application for gravel cyclists to use while racing through the South African desert for 7 days. We also created a registration website for ticket purchases and add-ons."
-            skills="sports & lifestyle | branding | web & mobile design"
+            skills="sports & lifestyle | branding | mobile design"
           />
           <Project
             to="/made-to-play"

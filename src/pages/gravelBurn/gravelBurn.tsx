@@ -19,9 +19,9 @@ import Hifi from "../../images/gravelBurn/hifi.png";
 import HifiVideo from "../../images/gravelBurn/app-demo.mp4";
 
 const SkillPills = [
-  "brand identity",
   "user research",
   "user interviews",
+  "brand identity",
   "wireframing",
   "prototyping",
   "mobile application design",
@@ -42,12 +42,12 @@ const GravelBurn = () => {
       <Page>
         <TextComponent
           projectPage
-          text="gravel cycling | elixirr | 2 months"
+          text="cycling | elixirr | 2 months"
           type="body"
         />
         <TextComponent
           projectPage
-          text="a race companion mobile application with live data"
+          text="a gravel race companion mobile application"
           type="header"
         />
         <TextComponent projectPage text="skills" type="title" />
@@ -259,12 +259,12 @@ const GravelBurn = () => {
             <TextComponent projectPage text="testimonial" type="title" />
             <TextComponent
               projectPage
-              text="''I can already say they’re setting the bar higher than I’ve ever experienced in a race besides the dang Tour de France in terms of production value."
+              text='"I can already say they’re setting the bar higher than I’ve ever experienced in a race besides the dang Tour de France in terms of production value.'
               type="body"
             />
             <TextComponent
               projectPage
-              text="One example: This is their app. Route insights, host town fun facts, logistical questions, photos, results, and more.''"
+              text='One example: This is their app. Route insights, host town fun facts, logistical questions, photos, results, and more."'
               type="body"
             />
             <TextComponent projectPage text="- Gravel Racer" type="body" />
