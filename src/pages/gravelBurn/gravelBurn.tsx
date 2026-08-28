@@ -17,6 +17,8 @@ import Concept2 from "../../images/gravelBurn/safari.png";
 import Wireframe from "../../images/gravelBurn/wireframe-2.png";
 import Hifi from "../../images/gravelBurn/hifi.png";
 import HifiVideo from "../../images/gravelBurn/app-demo.mp4";
+import Planning from "../../images/gravelBurn/planning-1.png";
+import Roadmap from "../../images/gravelBurn/roadmap.png";
 
 const SkillPills = [
   "user research",
@@ -123,6 +125,8 @@ const GravelBurn = () => {
             />
           </TextSection>
         </Section>
+        <FullImage src={Roadmap} />
+        <FullImage src={Planning} />
         <TextComponent projectPage text="02 wireframes" type="subheader" />
         <Section>
           <TextSection left>
