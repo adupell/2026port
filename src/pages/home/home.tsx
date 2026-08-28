@@ -3,6 +3,7 @@ import { FooterPageContainer, Page } from "../shared.styles";
 import PersonalPortfolio from "../../images/home/personalportfolio.png";
 import MadeToPlay from "../../images/home/madetoplay.png";
 import Letterboxd from "../../images/home/letterboxd.png";
+import GravelBurn from "../../images/home/gravel-burn.png";
 import { ProjectContainer } from "./home.styles";
 
 const HomePage = () => {
@@ -15,6 +16,13 @@ const HomePage = () => {
         />
         <TextComponent text="some of my work:" type="subheader" />
         <ProjectContainer>
+          <Project
+            to="/gravel-burn"
+            img={GravelBurn}
+            title="professional cycling event companion app & website"
+            description="Our client needed an offline mobile application for gravel cyclists to use while racing through the South African desert for 7 days. We also created a registration website for ticket purchases and add-ons."
+            skills="sports & lifestyle | branding | web & mobile design"
+          />
           <Project
             to="/made-to-play"
             img={MadeToPlay}
