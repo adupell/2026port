@@ -2,4 +2,4 @@ export { default as HomePage } from "./home";
 export { default as AboutPage } from "./about";
 export { default as MadeToPlay } from "./madeToPlay";
 export { default as Letterboxd } from "./letterboxd";
-export { default as GravelBurn } from "./gravelBurn";
+export { default as GravelRace } from "./gravelRace";
