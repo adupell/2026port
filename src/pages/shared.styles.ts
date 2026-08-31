@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { $white } from "../assets/colors";
+import { $black, $orange, $white } from "../assets/colors";
 
 interface TextSectionProps {
   left?: boolean;
@@ -105,4 +105,26 @@ export const StyledVideo = styled.video`
   width: 100%;
   height: auto;
   object-fit: contain;
+`;
+
+export const StyledLink = styled.a`
+  color: ${$orange};
+  text-decoration: none;
+  font-size: 14px;
+`;
+
+export const StyledButton = styled.a`
+  padding: 8px 16px;
+  background-color: ${$orange};
+  color: ${$black};
+  text-decoration: none;
+  font-size: 16px;
+  border: ${$orange} dotted 1px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${$black};
+    color: ${$orange};
+    border: ${$orange} dotted 1px;
+  }
 `;
