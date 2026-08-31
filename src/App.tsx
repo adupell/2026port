@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./components";
 import {
   HomePage,
@@ -14,7 +14,7 @@ import { ScrollToTop } from "./assets/scrollToTop";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Header />
         <Routes>
@@ -26,7 +26,7 @@ function App() {
           <Route path="/gravel-race" element={<GravelRace />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
