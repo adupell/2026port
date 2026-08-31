@@ -22,7 +22,7 @@ function App() {
           <Route path="/made-to-play" element={<MadeToPlay />} />
           <Route path="/letterboxd" element={<Letterboxd />} />
           <Route path="/letterboxd" element={<Letterboxd />} />
-          <Route path="/gravel-burn" element={<GravelRace />} />
+          <Route path="/gravel-race" element={<GravelRace />} />
         </Routes>
       </BrowserRouter>
     </>
