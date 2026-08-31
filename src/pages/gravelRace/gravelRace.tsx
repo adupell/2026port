@@ -235,7 +235,7 @@ const GravelRace = () => {
           </TextSection>
         </Section>
         <Section>
-          <StyledVideo autoPlay controls loop muted>
+          <StyledVideo controls loop muted>
             <source src={HifiVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </StyledVideo>
