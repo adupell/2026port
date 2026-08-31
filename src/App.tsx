@@ -7,6 +7,7 @@ import {
   MadeToPlay,
   Letterboxd,
   GravelRace,
+  PageNotFound,
 } from "./pages";
 import { ScrollToTop } from "./assets/scrollToTop";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/letterboxd" element={<Letterboxd />} />
           <Route path="/letterboxd" element={<Letterboxd />} />
           <Route path="/gravel-race" element={<GravelRace />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>

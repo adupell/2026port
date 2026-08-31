@@ -7,8 +7,9 @@ import {
   Section,
   StyledVideo,
   TextSection,
+  StyledLink,
 } from "../shared.styles";
-import { PillContainer, StyledLink } from "./gravelRace.styles";
+import { PillContainer } from "./gravelRace.styles";
 import Cover from "../../images/gravelRace/appstore.png";
 import ColorGuide from "../../images/gravelRace/color-guide.png";
 import Inspo from "../../images/gravelRace/inspo.png";
