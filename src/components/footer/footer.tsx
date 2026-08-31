@@ -51,7 +51,7 @@ const Footer = () => {
         </StyledTextContainer>
         <StyledTextContainer>
           <TextComponent text="projects" type="title" />
-          <StyledLink to="/gravel-burn">gravel burn</StyledLink>
+          <StyledLink to="/gravel-race">gravel race</StyledLink>
           <StyledLink to="/made-to-play">made to play</StyledLink>
           <StyledLink to="/letterboxd">letterboxd</StyledLink>
           <StyledLink to="https://amandadupell.surge.sh/" target="_blank">

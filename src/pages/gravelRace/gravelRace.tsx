@@ -8,17 +8,17 @@ import {
   StyledVideo,
   TextSection,
 } from "../shared.styles";
-import { PillContainer, StyledLink } from "./gravelBurn.styles";
-import Cover from "../../images/gravelBurn/appstore.png";
-import ColorGuide from "../../images/gravelBurn/color-guide.png";
-import Inspo from "../../images/gravelBurn/inspo.png";
-import Concept1 from "../../images/gravelBurn/night-burn.png";
-import Concept2 from "../../images/gravelBurn/safari.png";
-import Wireframe from "../../images/gravelBurn/wireframe-2.png";
-import Hifi from "../../images/gravelBurn/hifi.png";
-import HifiVideo from "../../images/gravelBurn/app-demo.mp4";
-import Planning from "../../images/gravelBurn/planning-1.png";
-import Roadmap from "../../images/gravelBurn/roadmap.png";
+import { PillContainer, StyledLink } from "./gravelRace.styles";
+import Cover from "../../images/gravelRace/appstore.png";
+import ColorGuide from "../../images/gravelRace/color-guide.png";
+import Inspo from "../../images/gravelRace/inspo.png";
+import Concept1 from "../../images/gravelRace/night-burn.png";
+import Concept2 from "../../images/gravelRace/safari.png";
+import Wireframe from "../../images/gravelRace/wireframe-2.png";
+import Hifi from "../../images/gravelRace/hifi.png";
+import HifiVideo from "../../images/gravelRace/app-demo.mp4";
+import Planning from "../../images/gravelRace/planning-1.png";
+import Roadmap from "../../images/gravelRace/roadmap.png";
 
 const SkillPills = [
   "user research",
@@ -29,7 +29,7 @@ const SkillPills = [
   "mobile application design",
 ];
 
-const GravelBurn = () => {
+const GravelRace = () => {
   const renderSkillPills = () => {
     let pills;
     pills = SkillPills.map((text: string) => {
@@ -98,7 +98,7 @@ const GravelBurn = () => {
             />
             <TextComponent
               projectPage
-              text="We analysed existing cycling tools (Ride With GPS, Strava, Trailforks) to understand how they visualised terrain data and stage progress. Then, we tailored those insights to Gravel Burn’s luxury-adventure hybrid identity."
+              text="We analysed existing cycling tools (Ride With GPS, Strava, Trailforks) to understand how they visualised terrain data and stage progress. Then, we tailored those insights to the client's luxury-adventure hybrid identity."
               type="body"
             />
           </TextSection>
@@ -235,7 +235,7 @@ const GravelBurn = () => {
           </TextSection>
         </Section>
         <Section>
-          <StyledVideo autoPlay controls loop muted>
+          <StyledVideo controls loop muted>
             <source src={HifiVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </StyledVideo>
@@ -250,7 +250,7 @@ const GravelBurn = () => {
             <TextComponent projectPage text="launch" type="title" />
             <TextComponent
               projectPage
-              text="Our mobile application launched after 2 months of design and 2 months of development, landing in the hands of the racers just in time for the 7 day event."
+              text="Our mobile application launched after 2 months of design and 2 months of development, landing in the hands of the racers just in time for the event."
               type="body"
             />
             <TextComponent
@@ -268,7 +268,7 @@ const GravelBurn = () => {
             />
             <TextComponent
               projectPage
-              text='"You&apos;re literally reading the results directly off of the Gravel Burn app."'
+              text='"You&apos;re literally reading the results directly off of the app."'
               type="body"
             />
             <TextComponent
@@ -300,4 +300,4 @@ const GravelBurn = () => {
   );
 };
 
-export default GravelBurn;
+export default GravelRace;

@@ -6,7 +6,7 @@ import {
   AboutPage,
   MadeToPlay,
   Letterboxd,
-  GravelBurn,
+  GravelRace,
 } from "./pages";
 import { ScrollToTop } from "./assets/scrollToTop";
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/made-to-play" element={<MadeToPlay />} />
           <Route path="/letterboxd" element={<Letterboxd />} />
           <Route path="/letterboxd" element={<Letterboxd />} />
-          <Route path="/gravel-burn" element={<GravelBurn />} />
+          <Route path="/gravel-race" element={<GravelRace />} />
         </Routes>
       </BrowserRouter>
     </>
