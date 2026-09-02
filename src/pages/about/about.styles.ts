@@ -10,7 +10,7 @@ export const Content = styled.div`
   display: flex;
   padding-bottom: 100px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
 `;
@@ -24,7 +24,7 @@ export const SectionContainer = styled.div`
 export const RightSide = styled(SectionContainer)`
   padding: 0 0 0 80px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     padding: 0;
   }
 `;
@@ -41,7 +41,7 @@ export const StyledImg = styled.img`
     width: 200px;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     position: relative;
     flex-direction: column;
     top: 0;

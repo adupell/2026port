@@ -10,7 +10,7 @@ export const ProjectContainer = styled.div`
     padding: 64px 0;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     padding: 40px 0;
   }
 `;

@@ -41,8 +41,8 @@ export const Page = styled.div`
     padding: 80px 100px;
   }
 
-  @media screen and (max-width: 1000px) {
-    padding: 48px;
+  @media screen and (max-width: 1024px) {
+    padding: 24px 36px;
   }
 `;
 
@@ -52,7 +52,7 @@ export const Section = styled.div`
   margin: 120px 0;
   align-items: top;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     margin: 0;
   }
@@ -70,7 +70,7 @@ export const TextSection = styled(Section)<TextSectionProps>`
   ${({ long }) =>
     long ? `justify-content: space-between;` : `justify-content: flex-start;`}
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     padding: 20px 0;
     width: 100%;
   }
@@ -84,7 +84,7 @@ export const FullImage = styled.img<ImageProps>`
   margin-bottom: 120px;
   ${({ background }) => (background ? `background-color: ${$white};` : ``)}
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     margin: 20px 0;
   }
 `;
@@ -95,7 +95,7 @@ export const HalfImage = styled.img<ImageProps>`
   object-fit: contain;
   ${({ background }) => (background ? `background-color:${$white};` : ``)}
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     width: 100%;
     margin-bottom: 20px;
   }
