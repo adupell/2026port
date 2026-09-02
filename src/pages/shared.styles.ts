@@ -42,7 +42,7 @@ export const Page = styled.div`
   }
 
   @media screen and (max-width: 1000px) {
-    padding: 48px;
+    padding: 24px 36px;
   }
 `;
 
