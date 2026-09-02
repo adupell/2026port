@@ -89,7 +89,7 @@ const AboutPage = () => {
               />
               <TextComponent
                 type="body"
-                text="I continued to work in print through college, working as an editor and writer for The Artistry, an art and music magazine, and The Avenue, a fashio magazine. I went on to become the Web Editor for The Avenue, redesigning the entire site and artcle infrastructure."
+                text="I continued to work in print through college, working as an editor and writer for The Artistry, an art & music magazine, and The Avenue, a fashion magazine. I went on to become the Web Editor for The Avenue, redesigning the entire site and article infrastructure."
               />
               <TextComponent
                 type="body"
