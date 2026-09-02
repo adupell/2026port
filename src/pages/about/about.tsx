@@ -19,10 +19,12 @@ const SkillPills = [
   "a/b testing",
   "wireframes",
   "prototypes",
+  "branding",
+  "design systems",
+  "ui component libraries",
+  "style guides",
   "interaction design",
   "layout design",
-  "cursor",
-  "claude",
 ];
 
 const LovePills = [
@@ -83,6 +85,14 @@ const AboutPage = () => {
               />
               <TextComponent
                 type="body"
+                text="My first design role was serving as the Creative Director of my high school newspaper where I mastered layout design using InDesign."
+              />
+              <TextComponent
+                type="body"
+                text="I continued to work in print through college, working as an editor and writer for The Artistry, an art and music magazine, and The Avenue, a fashio magazine. I went on to become the Web Editor for The Avenue, redesigning the entire site and artcle infrastructure."
+              />
+              <TextComponent
+                type="body"
                 text="As an adult, I’ve grown to love design in all forms. In my work, I focus on creating beautiful, accessible digital experiences for all."
               />
               <TextComponent
@@ -107,7 +117,7 @@ const AboutPage = () => {
               <TextComponent type="header" text="my name is Frank." />
               <TextComponent
                 type="body"
-                text="i’ve been sitting on my mom’s lap during meetings since 2020."
+                text="I’ve been sitting in on meetings with Amanda since 2020."
               />
             </SectionContainer>
             <SectionContainer>
