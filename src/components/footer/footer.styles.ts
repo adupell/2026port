@@ -12,7 +12,7 @@ export const StyledFooter = styled.footer`
     padding: 80px 100px;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     padding: 48px;
   }
 `;

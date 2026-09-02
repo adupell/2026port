@@ -18,7 +18,7 @@ export const StyledNav = styled.nav`
   align-items: center;
   border-right: dotted ${$orange};
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     width: 100%;
     height: auto;
     flex-direction: row;
@@ -48,7 +48,7 @@ export const StyledLink = styled(Link)<LinkProps>`
     cursor: pointer;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     border: none;
   }
 `;
@@ -58,7 +58,7 @@ export const StyledLogo = styled.img`
   width: 45%;
   padding: 64px 0;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -67,7 +67,7 @@ export const StyledGif = styled.img`
   display: flex;
   width: 80%;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `;
