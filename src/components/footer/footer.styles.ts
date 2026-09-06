@@ -49,3 +49,17 @@ export const StyledA = styled.a`
     cursor: pointer;
   }
 `;
+
+export const StyledSVG = styled.img`
+  display: flex;
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  align-self: center;
+  padding-top: 64px;
+
+  @media screen and (max-width: 1024px) {
+    width: 70%;
+    padding-top: 48px;
+  }
+`;

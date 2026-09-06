@@ -6,7 +6,9 @@ import {
   StyledLink,
   StyledTextContainer,
   StyledContainer,
+  StyledSVG,
 } from "./footer.styles";
+import Signature from "../../assets/footerlogo.svg";
 
 const Footer = () => {
   const text = "anddupell@gmail.com";
@@ -59,6 +61,7 @@ const Footer = () => {
           </StyledLink>
         </StyledTextContainer>
       </StyledContainer>
+      <StyledSVG src={Signature} />
     </StyledFooter>
   );
 };
