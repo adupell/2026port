@@ -2,10 +2,8 @@ import { Footer, Pill, TextComponent } from "../../components";
 import {
   FooterPageContainer,
   FullImage,
-  HalfImage,
   Page,
   Section,
-  StyledVideo,
   TextSection,
 } from "../shared.styles";
 import { PillContainer } from "./ratings.styles";
