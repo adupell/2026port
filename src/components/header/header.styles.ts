@@ -65,7 +65,8 @@ export const StyledLogo = styled.img`
 
 export const StyledGif = styled.img`
   display: flex;
-  width: 80%;
+  width: 30%;
+  padding: 48px 0;
 
   @media screen and (max-width: 1024px) {
     display: none;
