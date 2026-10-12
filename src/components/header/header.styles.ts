@@ -22,8 +22,6 @@ export const StyledNav = styled.nav`
     width: 100%;
     height: auto;
     flex-direction: row;
-    text-align: center;
-    align-items: center;
     border-right: 0;
     border-bottom: dotted ${$orange};
     z-index: 999;
@@ -55,8 +53,8 @@ export const StyledLink = styled(Link)<LinkProps>`
 
 export const StyledLogo = styled.img`
   display: flex;
-  width: 45%;
-  padding: 64px 0;
+  width: 40%;
+  padding: 48px 0;
 
   @media screen and (max-width: 1024px) {
     display: none;
@@ -65,7 +63,8 @@ export const StyledLogo = styled.img`
 
 export const StyledGif = styled.img`
   display: flex;
-  width: 80%;
+  padding-top: 48px;
+  width: 40%;
 
   @media screen and (max-width: 1024px) {
     display: none;

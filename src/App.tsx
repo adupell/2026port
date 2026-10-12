@@ -8,6 +8,7 @@ import {
   Letterboxd,
   GravelRace,
   PageNotFound,
+  Ratings,
 } from "./pages";
 import { ScrollToTop } from "./assets/scrollToTop";
 
@@ -22,8 +23,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/made-to-play" element={<MadeToPlay />} />
           <Route path="/letterboxd" element={<Letterboxd />} />
-          <Route path="/letterboxd" element={<Letterboxd />} />
           <Route path="/gravel-race" element={<GravelRace />} />
+          <Route path="/ratings" element={<Ratings />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </HashRouter>

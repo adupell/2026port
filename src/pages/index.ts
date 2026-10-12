@@ -4,3 +4,4 @@ export { default as MadeToPlay } from "./madeToPlay";
 export { default as Letterboxd } from "./letterboxd";
 export { default as GravelRace } from "./gravelRace";
 export { default as PageNotFound } from "./pageNotFound";
+export { default as Ratings } from "./ratings";
